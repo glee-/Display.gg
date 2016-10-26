@@ -265,7 +265,7 @@ def getPlayer(player):
             if not games[i]['stats']['win'] :
                 tiltFactor += 10 - i
     tiltFactor *= 10.0 / 55
-    tiltFactor = int((tiltFactor * 10) + 0.5) / 10.0
+    tiltFactor = round(tiltFactor)
     if not wasGame:
         tiltFactor = "Unknown"
     else:
